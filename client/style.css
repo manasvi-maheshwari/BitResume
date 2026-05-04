@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 
+        radial-gradient(circle at top left, rgba(31, 174, 75, 0.45) 0%, transparent 45%),
+        radial-gradient(circle at bottom right, rgba(31, 174, 75, 0.25) 0%, transparent 45%),
+        linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #000;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+h1::before {
+    content: "01";
+    color: #1FAE4B;
+    font-size: 0.5em;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 2px solid #1FAE4B;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.parser-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    color: #000;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+button {
+    background: #1FAE4B;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    color: #1a1a1a;
+    font-family: monospace;
+}

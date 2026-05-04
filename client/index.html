@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BitResume | Resume Parser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-wrapper">
+        <div class="parser-container">
+            <h1>BitResume</h1>
+            <p>Deconstructing resumes into digital bits.</p>
+            
+            <textarea id="resume-input" placeholder="Paste resume content here..."></textarea>
+            
+            <button id="parse-btn">Parse Resume</button>
+
+            <div id="result-section" style="display: none; margin-top: 2rem;">
+                <h3>Structured Output</h3>
+                <pre id="json-output"></pre>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
